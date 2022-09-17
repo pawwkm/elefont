@@ -130,7 +130,7 @@ I needed to adjust [Cozette](https://github.com/slavfox/Cozette) a bit. While th
 000000000000
 ```
 
-I would take awhile to shave off the excess to get all characters to down to 6x13px. But still faster than the zooming in on picture of the font to make out each pixel at a time... 
+It would take awhile to shave off the excess to get all characters to down to 6x13px. But still faster than the zooming in on picture of the font to make out each pixel at a time... 
 Anyway use the `resize` command to adjust the columns and rows across all characters:
 
 ```console
