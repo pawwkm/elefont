@@ -110,8 +110,9 @@ elefont creep.bdf
 ...
 ```
 
-Since we didn't specify a path to save the font at it was displayed in the console. More on that later.
-But needed to adjust [Cozette](https://github.com/slavfox/Cozette) a bit. While the ASCII part fits 6x13px it defines a lot more than ASCII and needs 12x13px to fit all of it. Take `H` for example. 
+Since we didn't specify a path to save the font at it was displayed in the console.
+
+I needed to adjust [Cozette](https://github.com/slavfox/Cozette) a bit. While the ASCII part fits 6x13px it defines a lot more than ASCII and needs 12x13px to fit all of it. Take `H` for example. 
 
 ```
 000000000000
