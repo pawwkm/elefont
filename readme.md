@@ -17,7 +17,7 @@ Elefont - ASCII font packer
 
 > ELAPHANTS!
 
-For my [text editor](https://github.com/pawwkm/moss) I have spent hours on extracting characters from fonts I were interested in trying out for it. Pixel by pixel... by hand. So I created this tool. This tool converts the [ASCII](https://en.wikipedia.org/wiki/ASCII) portion of [BDF](https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format) fonts to a text or binary format. It can also convert it to C using the binary format.
+For my [text editor](https://github.com/pawwkm/moss) I have spent hours on extracting characters from fonts I were interested in trying out for it. Pixel by pixel... by hand. So I created this tool. This tool converts the [ASCII](https://en.wikipedia.org/wiki/ASCII) portion of [BDF](https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format) fonts to a text or binary format. It can also embed the binary format in C code.
 Fonts are monospaced, monochrome and ASCII only. Fonts encode `'!'` to  `'~'` in that order. It is assumed that space is a blank character. Info such as offsets are not stored.
 
 # Formats
