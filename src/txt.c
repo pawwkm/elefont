@@ -23,12 +23,12 @@ Font read_txt(FILE* src)
             check(!feof(src), "Unexpected end of src.\n");
 
             int c = fgetc(src);
-            if (c == '0')
+            if (c == '-')
             {
                 bit = false;
                 break;
             }
-            else if (c == '1')
+            else if (c == '#')
             {
                 bit = true;
                 break;
@@ -62,7 +62,7 @@ void write_txt(FILE* dst, const Font* src)
     const uint8_t* current = src->bitmap;
     while (bits_to_decode--)
     {
-        fputc((*current & mask) ? '1' : '0', dst);
+        fputc((*current & mask) ? '#' : '-', dst);
         if (++w == src->width)
         {
             w = 0;
