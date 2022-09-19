@@ -48,7 +48,7 @@ be `width * height` `1` and `0` optionally separated by spaces and newlines.
 ...
 ```
 ## Binary (.af)
-Binare fonts start with 2 bytes which are the with and height followed by the bit array of pixels.
+Binare fonts start with 2 bytes which are the width and height followed by the bit array of pixels.
 
 ## C code (.c)
 Useful for [embedding](https://github.com/pawwkm/moss/blob/main/configuration.c#L43-L49) fonts directly into programs.
