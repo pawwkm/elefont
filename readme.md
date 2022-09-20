@@ -110,7 +110,7 @@ elefont creep.bdf
 ...
 ```
 
-Since I didn't specify `src` the font was displayed in the console.
+Since I didn't specify `dst` the font was displayed in the console.
 
 I needed to adjust [Cozette](https://github.com/slavfox/Cozette) a bit. While the ASCII part fits 6x13px it defines a lot more than ASCII and needs 12x13px to fit all of it. Take `H` for example. 
 
