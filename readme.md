@@ -17,7 +17,7 @@ Elefont - ASCII font packer
 
 > ELAPHANTS!
 
-For my [text editor](https://github.com/pawwkm/moss) I have spent hours on extracting characters from fonts I were interested in trying out for it. Pixel by pixel... by hand. So I created this tool. This tool converts the [ASCII](https://en.wikipedia.org/wiki/ASCII) portion of [BDF](https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format) fonts to a text or binary format. It can also convert it to C using the binary format.
+For my [text editor](https://github.com/pawwkm/moss) I have spent hours on extracting characters from fonts I were interested in trying out for it. Pixel by pixel... by hand. So I created this tool. This tool converts the [ASCII](https://en.wikipedia.org/wiki/ASCII) portion of [BDF](https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format) fonts to a text or binary format. It can also embed the binary format in C code.
 Fonts are monospaced, monochrome and ASCII only. Fonts encode `'!'` to  `'~'` in that order. It is assumed that space is a blank character. Info such as offsets are not stored.
 
 # Formats
@@ -48,7 +48,7 @@ be `width * height` `1` and `0` optionally separated by spaces and newlines.
 ...
 ```
 ## Binary (.af)
-Binare fonts start with 2 bytes which are the with and height followed by the bit array of pixels.
+Binare fonts start with 2 bytes which are the width and height followed by the bit array of pixels.
 
 ## C code (.c)
 Useful for [embedding](https://github.com/pawwkm/moss/blob/main/configuration.c#L43-L49) fonts directly into programs.
@@ -110,7 +110,7 @@ elefont creep.bdf
 ...
 ```
 
-Since we didn't specify a path to save the font at it was displayed in the console.
+Since I didn't specify `src` the font was displayed in the console.
 
 I needed to adjust [Cozette](https://github.com/slavfox/Cozette) a bit. While the ASCII part fits 6x13px it defines a lot more than ASCII and needs 12x13px to fit all of it. Take `H` for example. 
 
