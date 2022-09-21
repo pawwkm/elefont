@@ -32,7 +32,7 @@ Characters are stored from `'!'` to  `'~'` and the pixels are stored form the to
 ## Text (.txt)
 For finer edits or creating a new font. The text format allows for piggy backing on existing editors for undo/redo and whatnot.
 Text based fonts starts with the width and height separated by a single space and ends with a newline. After that there must
-be `width * height` `#` and `-` optionally separated by spaces and newlines.
+be `width * height * 94` `#` and `-` optionally separated by spaces and newlines.
 
 ```
 2 3
